@@ -1,3 +1,0 @@
-
-def Remove():
-    print("Remove")
