@@ -4,6 +4,8 @@ import view
 import search
 import edit
 import delete
+import clear
+
 
 
 class ContactManager:      ### Used OOP for my own satisfiction though it is not ordered to do
@@ -21,10 +23,9 @@ class ContactManager:      ### Used OOP for my own satisfiction though it is not
             6: "Exit"
         }
 
-        print("\n\n============================")
-        print("          _DhumkeTU_        ")
-        print("      __Contact Manager__   ")
-        print("============================")
+        
+        print("\n\n___________DhumkeTU___________")
+        print("________Contact Manager________")
         
         k = int(input("\n\n\n  Pres 1 to Enter : "))
         if k != 1:
@@ -33,10 +34,8 @@ class ContactManager:      ### Used OOP for my own satisfiction though it is not
         
 
         while True:
-
-            print("\n\n============================")
-            print("          _Main Menu_        ")
-            print("============================\n\n")
+            clear.Clear()
+            print("\n\n___________Main Menu___________\n\n")
             
             for i, msg in menu.items():
                 print(f"    {i}. {msg}\n")
@@ -77,6 +76,8 @@ class ContactManager:      ### Used OOP for my own satisfiction though it is not
 
     def Search(self):
         search.Search(self.file_name)
+    
+   
 
 
 

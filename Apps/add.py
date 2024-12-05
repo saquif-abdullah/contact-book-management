@@ -2,13 +2,12 @@
 import read_contacts
 import write_contacts
 import menu_call
+import clear
 
 def Add(file_name):
 
-    
-    print("\n\n============================")
-    print("     __Add New Contact__    ")
-    print("============================\n\n")
+    clear.Clear()
+    print("\n\n___________Add Contact___________\n\n")
 
     contact = {}
     contact["name"] = input("    Enter Name : ")
